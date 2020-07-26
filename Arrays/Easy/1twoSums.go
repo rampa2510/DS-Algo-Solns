@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
 func twoSum(nums []int, target int) [2]int {
 	hashMap := make(map[int][2]int)
@@ -28,7 +31,26 @@ func twoSum(nums []int, target int) [2]int {
 	return indice
 }
 
+func twoSumSort(arr []int, target int) {
+	sort.Ints(arr)
+	lPointer := 0
+	rPointer := len(arr) - 1
+	for true {
+		sum := arr[lPointer] + arr[rPointer]
+		if sum == target {
+			fmt.Println(arr[lPointer], arr[rPointer])
+			break
+		}
+		if sum > target {
+			rPointer--
+		} else {
+			lPointer++
+		}
+	}
+}
+
 func main() {
-	newMap := twoSum([]int{3, 2, 4}, 6)
-	fmt.Println(newMap)
+	// newMap := twoSum([]int{3, 2, 4}, 6)
+	twoSumSort([]int{3, 2, 4}, 6)
+	// fmt.Println(newMap)
 }
