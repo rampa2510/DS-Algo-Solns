@@ -6,6 +6,7 @@ I have chosen Golang as my language for solving DS and Algo. Each and every prog
 
 ## Leetcode
 This folder consists of the solutions for the leetcode problems. The folder will be structured in 3 parts based on taged difficulty. 
+
     - Easy - consisting of the easy marked solutions
     - Medium - consisting of the question taged as medium difficulty level
     - Hard - Questions of hard difficulty level
