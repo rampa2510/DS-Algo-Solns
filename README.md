@@ -1,5 +1,10 @@
 # My solutions for DS and Algo Problems I encountered
 I have chosen Golang as my language for solving DS and Algo. Each and every program has the output(.exe) file.
+
+
+## Install Golang
+To download golang [click here](https://golang.org/doc/install). Follow the install tion steps and you are ready with your dev envrionment
+
 # Table Of Contents
 1. [Leetcode](#Leetcode)
 2. [Random](#Random)
