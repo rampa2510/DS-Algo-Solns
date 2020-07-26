@@ -41,6 +41,9 @@ func twoSumSort(arr []int, target int) {
 			fmt.Println(arr[lPointer], arr[rPointer])
 			break
 		}
+		if rPointer <= lPointer {
+			return []int{}
+		}
 		if sum > target {
 			rPointer--
 		} else {
