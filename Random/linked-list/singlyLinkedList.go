@@ -118,6 +118,27 @@ func (ll *linkedList) update(pos, data int) {
 	currNode.data = data
 }
 
+func (ll *linkedList) reverseLL() {
+	if ll.isEmpty() {
+		fmt.Println("Empty linked list")
+		return
+	}
+	currNode := ll.head.pointer
+	revLL := ll.head
+	revLL.pointer = nil
+	// fmt.Println(currNode, revLL)
+	var nextNode *node
+	nextNode = new(node)
+	for currNode != nil {
+		nextNode = currNode.pointer // err
+		currNode.pointer = revLL
+		revLL = currNode
+		currNode = nextNode
+	}
+	ll.head = revLL
+	// fmt.Println(ll.head)
+}
+
 func main() {
 	var ll *linkedList
 	ll = new(linkedList)
@@ -141,5 +162,7 @@ func main() {
 	ll.update(2, 11)
 	fmt.Println("Display after updating")
 	ll.display()
-
+	ll.reverseLL()
+	fmt.Println("Display after reverse")
+	ll.display()
 }
