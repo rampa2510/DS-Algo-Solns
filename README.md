@@ -1,5 +1,5 @@
 # My solutions for DS and Algo Problems I encountered
-I have chosen Golang as my language for solving DS and Algo. Each and every program has the output(.exe) file.
+I have chosen Golang as my language for solving DS and Algo.
 
 
 ## Install Golang
