@@ -22,6 +22,7 @@ func createNewNode(data int) *node {
 
 func (ll *doubleLinkedList) isEmpty() bool {
 	if ll.head == nil {
+		fmt.Println("Linked list is empty")
 		return true
 	}
 	return false
@@ -51,15 +52,14 @@ func (ll *doubleLinkedList) insert(data, pos int) {
 	for i := 1; i < pos-1; i++ {
 		currNode = currNode.next
 	}
-	fmt.Println(currNode)
+	// fmt.Println(currNode)
 	newNode.next, newNode.prev, currNode.next.prev, currNode.next = currNode.next, currNode, newNode, newNode
-	fmt.Println(newNode)
+	// fmt.Println(newNode)
 }
 func (ll *doubleLinkedList) insertAtEnd(data int) {
 	var newNode *node
 	newNode = createNewNode(data)
 	if ll.isEmpty() {
-		fmt.Println("Empty linked list")
 		return
 	}
 	currNode := ll.head
@@ -71,7 +71,6 @@ func (ll *doubleLinkedList) insertAtEnd(data int) {
 
 func (ll *doubleLinkedList) displayFromStart() {
 	if ll.isEmpty() {
-		fmt.Println("Empty linked list")
 		return
 	}
 	currNode := ll.head
@@ -83,7 +82,6 @@ func (ll *doubleLinkedList) displayFromStart() {
 
 func (ll *doubleLinkedList) displayFromStartWRec(currNode *node) {
 	if ll.isEmpty() {
-		fmt.Println("Empty linked list")
 		return
 	}
 	if currNode == nil {
@@ -105,6 +103,43 @@ func (ll *doubleLinkedList) displayFromEnd() {
 	}
 }
 
+func (ll *doubleLinkedList) deleteFromStart() *node {
+	if ll.isEmpty() {
+		fmt.Println("Linked list is empty")
+		return nil
+	}
+	nodeToDelete := ll.head
+	nodeToDelete.next.prev = nil
+	ll.head = nodeToDelete.next
+	return nodeToDelete
+}
+
+func (ll *doubleLinkedList) deleteFromEnd() *node {
+	if ll.isEmpty() {
+		return nil
+	}
+	var nodeBefore *node
+	nodeBefore = new(node)
+	nodeToDelete := ll.head
+	for nodeToDelete.next != nil {
+		nodeBefore = nodeToDelete
+		nodeToDelete = nodeToDelete.next
+	}
+	nodeBefore.next = nil
+	return nodeToDelete
+}
+
+func (ll *doubleLinkedList) update(pos, data int) {
+	if ll.isEmpty() {
+		return
+	}
+	currNode := ll.head
+	for i := 1; i < pos; i++ {
+		currNode = currNode.next
+	}
+	currNode.data = data
+}
+
 func main() {
 	ll := &doubleLinkedList{head: nil}
 	ll.insertAtBeg(2)
@@ -122,4 +157,13 @@ func main() {
 	ll.displayFromStart()
 	fmt.Println("Print from end")
 	ll.displayFromEnd()
+	ll.deleteFromStart()
+	fmt.Println("Print after deleting from start")
+	ll.displayFromStart()
+	fmt.Println("Display(reversed) after deleting from end")
+	ll.deleteFromEnd()
+	ll.displayFromEnd()
+	fmt.Println("Display after inserting at random")
+	ll.update(3, 11)
+	ll.displayFromStart()
 }
