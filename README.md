@@ -26,3 +26,4 @@ This folder consists of the solutions for the leetcode problems. The folder will
 This folder consists of the problems that I have solved outside of coding platforms
 1) [Two sums](Random/Algo/twoSums.go)
 2) [Singly Linked List](Random/linked-list/singlyLinkedList.go)
+3) [Seperate chaining hash table](Random/HashTable/seperateChaining.go)
