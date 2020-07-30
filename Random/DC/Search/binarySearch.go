@@ -18,9 +18,9 @@ func binSearch(a []int, low, up, target int) bool {
 	}
 	if a[mid] >= target {
 		return binSearch(a, low, mid-1, target)
-	} else {
-		return binSearch(a, mid+1, up, target)
 	}
+	return binSearch(a, mid+1, up, target)
+
 }
 
 func main() {

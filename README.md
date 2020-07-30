@@ -32,4 +32,4 @@ This folder consists of the problems that I have solved outside of coding platfo
 6) [2 stacks using single array](Random/stack/2stack.go)
 7) [Infix to postfix](Random/stack/infixToPostfix.go)
 8) [Simple implementation of queue](Random/queue/queue.go)
-9) [Binary search using recursion](Random/DC/binarySearch.go)
+9) [Binary search using recursion](Random/DC/Search/binarySearch.go)
