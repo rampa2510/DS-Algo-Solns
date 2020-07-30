@@ -13,6 +13,8 @@ import "fmt"
 // hash function here -> (key+i)%len(arr) where i is
 // So for insertion first I have checked whether the arr is consumed for 75% if it is then append 10 new elements and run the whole hash function for
 // already existing elements and then append the new key,value pair
+// the other two methods are same in quadratic probing the counter is squaared
+// in double hahsing the hasing taks as follow we take 2 hash functions = h1(x) + i*h2(x)
 type node struct {
 	key   int
 	value int
