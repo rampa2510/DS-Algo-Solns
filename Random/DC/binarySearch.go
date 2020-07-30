@@ -9,7 +9,7 @@ func binSearch(a []int, low, up, target int) bool {
 	if len(a) == 1 {
 		return a[0] == target
 	}
-	if low >= up {
+	if low > up {
 		return false
 	}
 	mid := int((up + low) / 2)
