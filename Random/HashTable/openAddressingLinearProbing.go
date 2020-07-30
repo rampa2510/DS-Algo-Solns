@@ -60,6 +60,7 @@ func (ht *hashTable) linearProbing(key, value int) {
 	}
 }
 
+// remember the for loop condition
 func (ht *hashTable) linearProbingSearching(key int) (int, int) {
 	if ht.valuesTaken == 0 {
 		fmt.Println("Hashtable empty")
@@ -67,7 +68,7 @@ func (ht *hashTable) linearProbingSearching(key int) (int, int) {
 	}
 	idx := key % len(ht.arr)
 	counter := 0
-	for ht.arr[idx].taken != false || len(ht.arr) != counter {
+	for (ht.arr[idx].taken == true || (ht.arr[idx].value != -1 && ht.arr[idx].taken == false)) && len(ht.arr) != counter {
 		if ht.arr[idx].key == key {
 			return ht.arr[idx].value, idx
 		}
@@ -85,7 +86,7 @@ func (ht *hashTable) linearProbingDeletion(key int) int {
 	}
 	// fmt.Println(n)
 	v := ht.arr[i].value
-	ht.arr[i] = node{0, 0, true}
+	ht.arr[i] = node{-1, -1, false}
 	ht.valuesTaken--
 	return v
 }
@@ -111,13 +112,14 @@ func main() {
 	// fmt.Println(ht.arr, ht.valuesTaken)
 
 	ht.linearProbing(10, 1)
-	fmt.Println(ht.arr, ht.valuesTaken)
+	// fmt.Println(ht.arr, ht.valuesTaken)
 	n, i := ht.linearProbingSearching(10)
-	fmt.Println(n, i)
+	// fmt.Println(n, i)
 	// n, i = ht.linearProbingSearching(11)
 	n = ht.linearProbingDeletion(10)
-	fmt.Println(n, ht.arr)
-	ht.linearProbing(10, 1)
-	fmt.Println(ht.arr)
-
+	// fmt.Println(n, ht.arr)
+	ht.linearProbing(11, 1)
+	// fmt.Println(ht.arr)
+	n, i = ht.linearProbingSearching(11)
+	fmt.Println(n, i, ht.arr)
 }
