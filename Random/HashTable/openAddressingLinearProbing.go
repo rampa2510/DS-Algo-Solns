@@ -2,6 +2,17 @@ package main
 
 import "fmt"
 
+// some notes
+// This is the program for open addressing collision resolution technique
+// here every element is added to the hashtable and none of them are linked
+// the insertion happens as follow first we check whether the index returned by the hash function has an element in arr or not
+// if it is occupied then increment it till we get an index which isnot occupied in arr. If i is incremented till len(arr)
+// then the arr is full and exit if the hash function returns index which is not occupied directly add at the index then
+// my implemenetation
+// the hash table consists of nodes which have 3 parts key,value and taken -> taken indicates whether the index is occupied or not
+// hash function here -> (key+i)%len(arr) where i is
+// So for insertion first I have checked whether the arr is consumed for 75% if it is then append 10 new elements and run the whole hash function for
+// already existing elements and then append the new key,value pair
 type node struct {
 	key   int
 	value int
@@ -13,7 +24,7 @@ type hashTable struct {
 	valuesTaken int
 }
 
-func (ht *hashTable) hashFn(key, value int) bool {
+func (ht *hashTable) hashFnAndAppend(key, value int) bool {
 	count := 0
 	idx := 0
 	for count != len(ht.arr) {
@@ -37,13 +48,13 @@ func (ht *hashTable) linearProbing(key, value int) {
 		for i, element := range ht.arr {
 			// fmt.Println(element)
 			tempHT.arr[i] = node{0, 0, false}
-			tempHT.hashFn(element.key, element.value)
+			tempHT.hashFnAndAppend(element.key, element.value)
 		}
 		ht.arr = tempHT.arr
 	}
 
 	// fmt.Println("Aa", ht.arr)
-	elementInserted := ht.hashFn(key, value)
+	elementInserted := ht.hashFnAndAppend(key, value)
 	if !elementInserted {
 		fmt.Println("Not enough space")
 	}
@@ -74,7 +85,8 @@ func (ht *hashTable) linearProbingDeletion(key int) int {
 	}
 	// fmt.Println(n)
 	v := ht.arr[i].value
-	ht.arr[i] = node{0, 0, false}
+	ht.arr[i] = node{0, 0, true}
+	ht.valuesTaken--
 	return v
 }
 
