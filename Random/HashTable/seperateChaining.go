@@ -2,6 +2,16 @@ package main
 
 import "fmt"
 
+// some notes
+// In separate chaining elements are nodes that have a pointer to the element that has the same hash value
+// collsions are avoide by appending the element to the same index in the array to the last node
+// Imagine if hash functions uses the length and we have length of 7
+// so now index for each element will be key%7 (key being a string)
+// for 1,11 -> 1%7 = 1 so it will be stored on 1st index [0,{value:11,key:1,next:nil},0,0,0,0,0]
+// 4,44 -> 4%7 = 4 so it will be stored on 4th index [0,{value:11,key:1,next:nil},0,0,{value:44,key:4,next:nil},0,0]
+// 6,66 -> 6%7 -> 6 so it will be stored on 6th index [0,{value:11,key:1,next:nil},0,0,{value:44,key:4,next:nil},0,{value:66,key:6,next:nil}]
+// 13,7 -> 13%7 -> 6 6 so it will be stored on 6th index [0,{value:11,key:1,next:nil},0,0,{value:44,key:4,next:nil},0,{value:66,key:6,next:&{key:13,value:7,next:nil}}]
+// so as we can se now if want to get element for a index which has multiple values we will match the key value for each node in that tree
 type keyValue struct {
 	key   int
 	value int

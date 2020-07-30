@@ -27,3 +27,4 @@ This folder consists of the problems that I have solved outside of coding platfo
 1) [Two sums](Random/Algo/twoSums.go)
 2) [Singly Linked List](Random/linked-list/singlyLinkedList.go)
 3) [Seperate chaining hash table](Random/HashTable/seperateChaining.go)
+4) [Linear Probing hash Table](Random/HashTable/openAddressingLinearProbing.go)
