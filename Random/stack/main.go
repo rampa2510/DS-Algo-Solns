@@ -1,0 +1,50 @@
+package main
+
+import "fmt"
+
+func main() {
+	s := Stack{tos: -1}
+	s.Push(1)
+	s.Push(2)
+	s.Push(3)
+	fmt.Println("******************Display all elements after insert")
+	s.Display()
+	fmt.Println("***************************************************")
+	a := s.Pop()
+	fmt.Println("Poped element = ", *a)
+	fmt.Println("******************Display all elements after poping")
+	s.Display()
+	fmt.Println("***************************************************")
+	fmt.Println("*********** 2 Stacks *******************************")
+	s2 := Stack2{tos1: -1, tos2: 9}
+	s2.Push2(1, 1)
+	s2.Push2(3, 1)
+	s2.Push2(5, 1)
+	s2.Push2(7, 1)
+	s2.Push2(9, 1)
+	s2.Push2(11, 1)
+	s2.Push2(13, 1)
+	s2.Push2(15, 1)
+	s2.Push2(17, 1)
+	fmt.Println("******************Display all elements after insert for stack 1")
+	s2.Display2(1)
+	fmt.Println("***************************************************************")
+	s2.Push2(2, 2)
+	s2.Push2(4, 2)
+	s2.Push2(6, 2)
+	s2.Push2(8, 2)
+	s2.Push2(10, 2)
+	s2.Push2(12, 2)
+	s2.Push2(14, 2)
+	s2.Push2(16, 2)
+	s2.Push2(18, 2)
+	fmt.Println("******************Display all elements after insert for stack 2")
+	s2.Display2(2)
+	fmt.Println("***************************************************************")
+	a = s2.Pop2(1)
+	fmt.Println("Popped element from top stack = ", *a)
+	a = s2.Pop2(2)
+	fmt.Println("Popped element from bottom stack = ", *a)
+	fmt.Println("***************************************************")
+
+}
