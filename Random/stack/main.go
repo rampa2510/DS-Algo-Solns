@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+)
 
 func main() {
 	s := Stack{tos: -1}
@@ -46,5 +50,12 @@ func main() {
 	a = s2.Pop2(2)
 	fmt.Println("Popped element from bottom stack = ", *a)
 	fmt.Println("***************************************************")
-
+	fmt.Println("******************Postfix element")
+	reader := bufio.NewReader(os.Stdin)
+	fmt.Print("Enter infix expression = ")
+	expression, _ := reader.ReadString('\n')
+	// expression = strings.TrimRight(expression, "\n")
+	// fmt.Println(expression)
+	postfixExpr := GetPostfix(expression)
+	fmt.Print(postfixExpr)
 }

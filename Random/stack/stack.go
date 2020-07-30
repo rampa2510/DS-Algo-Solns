@@ -52,3 +52,51 @@ func (s *Stack) Pop() *int {
 	s.tos--
 	return &s.arr[idx]
 }
+
+// StackS - Struct implementation of stack for strings
+type StackS struct {
+	arr [MaxStackCapacity]string
+	tos int
+}
+
+// Push - Push method for stack
+// It takes one argument and that is the element you want to insert
+func (s *StackS) Push(element string) {
+
+	if s.tos+1 == MaxStackCapacity {
+		fmt.Println("Stack capacity reached")
+		return
+	}
+	s.tos++
+	s.arr[s.tos] = element
+}
+
+// IsEmpty - Check if Stack empty or not
+func (s *StackS) IsEmpty() bool {
+	return s.tos == -1
+}
+
+// Display - Display all the elements of Stack
+func (s *StackS) Display() {
+
+	if s.IsEmpty() {
+		fmt.Println("Stack is empty")
+		return
+	}
+
+	for i := s.tos; i >= 0; i-- {
+		fmt.Println(s.arr[i])
+	}
+}
+
+// Pop - Pop method for Stack
+// It returns a integer pointer which points to the element that is popped
+func (s *StackS) Pop() *string {
+	if s.IsEmpty() {
+		fmt.Println("Empty stack")
+		return nil
+	}
+	idx := s.tos
+	s.tos--
+	return &s.arr[idx]
+}

@@ -30,3 +30,4 @@ This folder consists of the problems that I have solved outside of coding platfo
 4) [Linear Probing hash Table](Random/HashTable/openAddressingLinearProbing.go)
 5) [Stacks](Random/stack/stack.go)
 6) [2 stacks using single array](Random/stack/2stack.go)
+7) [Infix to postfix](Random/stack/infixToPostfix.go)
