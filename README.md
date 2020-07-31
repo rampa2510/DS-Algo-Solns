@@ -33,3 +33,4 @@ This folder consists of the problems that I have solved outside of coding platfo
 7) [Infix to postfix](Random/stack/infixToPostfix.go)
 8) [Simple implementation of queue](Random/queue/queue.go)
 9) [Binary search using recursion](Random/DC/Search/binarySearch.go)
+10) [Merge Sort](Random/DC/Sort/mergeSort.go)
