@@ -13,9 +13,15 @@ func main() {
 	/////
 
 	//// validate sequence
-	a := []int{5, 1, 22, 25, 6, -1, 8, 10}
-	s := []int{5, 1, 22, 22, 25, 6, -1, 8, 10}
-	h := isValidSubsequence(a, s)
-	fmt.Println(h)
+	// a := []int{5, 1, 22, 25, 6, -1, 8, 10}
+	// s := []int{5, 1, 22, 22, 25, 6, -1, 8, 10}
+	// h := isValidSubsequence(a, s)
+	// fmt.Println(h)
 	////
+
+	/// three sum
+	a := []int{12, 3, 1, 2, -6, 5, -8, 6}
+	b := threeNumberSumPointer(a, 0)
+	fmt.Println(b)
+	///
 }
