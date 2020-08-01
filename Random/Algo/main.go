@@ -20,8 +20,15 @@ func main() {
 	////
 
 	/// three sum
-	a := []int{12, 3, 1, 2, -6, 5, -8, 6}
-	b := threeNumberSumPointer(a, 0)
-	fmt.Println(b)
+	// a := []int{12, 3, 1, 2, -6, 5, -8, 6}
+	// b := threeNumberSumPointer(a, 0)
+	// fmt.Println(b)
 	///
+
+	//// Smallest Difference
+	a := []int{240, 124, 86, 111, 2, 84, 954, 27, 89}
+	b := []int{1, 3, 954, 19, 8}
+	c := smallestDifferencePointer(a, b)
+	fmt.Println(c)
+	////
 }

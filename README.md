@@ -28,6 +28,7 @@ This folder consists of the problems that I have solved outside of coding platfo
 1) [Two sums](Random/Algo/twoSums.go)
 2) [Validate Squence](Random/Algo/validateSequence.go)
 3) [Three Sum](Random/Algo/threeNumSum.go)
+4) [Smallest Difference](Random/Algo/smallestDiff.go)
 ### Concepts
 1) [Singly Linked List](Random/linked-list/singlyLinkedList.go)
 2) [Seperate chaining hash table](Random/HashTable/seperateChaining.go)
