@@ -26,9 +26,15 @@ func main() {
 	///
 
 	//// Smallest Difference
-	a := []int{240, 124, 86, 111, 2, 84, 954, 27, 89}
-	b := []int{1, 3, 954, 19, 8}
-	c := smallestDifferencePointer(a, b)
-	fmt.Println(c)
+	// a := []int{240, 124, 86, 111, 2, 84, 954, 27, 89}
+	// b := []int{1, 3, 954, 19, 8}
+	// c := smallestDifferencePointer(a, b)
+	// fmt.Println(c)
 	////
+
+	/// Monotonic
+	a := []int{-1, -1, -2, -3, -4, -5, -5, -5, -6, -7, -8, -8, -9, -10, -11}
+	b := isMonotonicWfor(a)
+	fmt.Println(b)
+	///
 }
