@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"sort"
 )
 
@@ -54,13 +53,4 @@ func twoSumBrute(array []int, target int) []int {
 		}
 	}
 	return []int{}
-}
-
-func main() {
-	a := []int{3, 5, -4, 8, 11, 1, -1, 6}
-	target := 10
-	hashMapSoln := twoNumberSumHashMap(a, target)
-	sortSoln := twoSumSort(a, target)
-	bruteSoln := twoSumBrute(a, target)
-	fmt.Println(hashMapSoln, sortSoln, bruteSoln)
 }

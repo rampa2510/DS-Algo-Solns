@@ -24,13 +24,17 @@ This folder consists of the solutions for the leetcode problems. The folder will
 
 ## Random
 This folder consists of the problems that I have solved outside of coding platforms
+### Algo
 1) [Two sums](Random/Algo/twoSums.go)
-2) [Singly Linked List](Random/linked-list/singlyLinkedList.go)
-3) [Seperate chaining hash table](Random/HashTable/seperateChaining.go)
-4) [Linear Probing hash Table](Random/HashTable/openAddressingLinearProbing.go)
-5) [Stacks](Random/stack/stack.go)
-6) [2 stacks using single array](Random/stack/2stack.go)
-7) [Infix to postfix](Random/stack/infixToPostfix.go)
-8) [Simple implementation of queue](Random/queue/queue.go)
-9) [Binary search using recursion](Random/DC/Search/binarySearch.go)
-10) [Merge Sort](Random/DC/Sort/mergeSort.go)
+2) [Validate Squence](Random/Algo/validateSequence.go)
+
+### Concepts
+1) [Singly Linked List](Random/linked-list/singlyLinkedList.go)
+2) [Seperate chaining hash table](Random/HashTable/seperateChaining.go)
+3) [Linear Probing hash Table](Random/HashTable/openAddressingLinearProbing.go)
+4) [Stacks](Random/stack/stack.go)
+5) [2 stacks using single array](Random/stack/2stack.go)
+6) [Infix to postfix](Random/stack/infixToPostfix.go)
+7) [Simple implementation of queue](Random/queue/queue.go)
+8)  [Binary search using recursion](Random/DC/Search/binarySearch.go)
+9) [Merge Sort](Random/DC/Sort/mergeSort.go)
