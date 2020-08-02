@@ -33,8 +33,14 @@ func main() {
 	////
 
 	/// Monotonic
-	a := []int{-1, -1, -2, -3, -4, -5, -5, -5, -6, -7, -8, -8, -9, -10, -11}
-	b := isMonotonicWfor(a)
-	fmt.Println(b)
+	// a := []int{-1, -1, -2, -3, -4, -5, -5, -5, -6, -7, -8, -8, -9, -10, -11}
+	// b := isMonotonicWfor(a)
+	// fmt.Println(b)
 	///
+
+	//// Spiral Traverse
+	a := [][]int{[]int{1, 2, 3, 4}, []int{12, 13, 14, 5}, []int{11, 16, 15, 6}, []int{10, 9, 8, 7}}
+	b := spiralTraverse(a)
+	fmt.Println(b)
+	////
 }
