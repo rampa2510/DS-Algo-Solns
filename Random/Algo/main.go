@@ -39,8 +39,14 @@ func main() {
 	///
 
 	//// Spiral Traverse
-	a := [][]int{[]int{1, 2, 3, 4}, []int{12, 13, 14, 5}, []int{11, 16, 15, 6}, []int{10, 9, 8, 7}}
-	b := spiralTraverse(a)
+	// a := [][]int{[]int{1, 2, 3, 4}, []int{12, 13, 14, 5}, []int{11, 16, 15, 6}, []int{10, 9, 8, 7}}
+	// b := spiralTraverse(a)
+	// fmt.Println(b)
+	////
+
+	//// Longest Peak
+	a := []int{1, 2, 3, 4, 5, 1}
+	b := longestPeak(a)
 	fmt.Println(b)
 	////
 }
