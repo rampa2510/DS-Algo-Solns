@@ -45,8 +45,14 @@ func main() {
 	////
 
 	//// Longest Peak
-	a := []int{1, 2, 3, 4, 5, 1}
-	b := longestPeak(a)
+	// a := []int{1, 2, 3, 4, 5, 1}
+	// b := longestPeak(a)
+	// fmt.Println(b)
+	////
+
+	//// FOur sum
+	a := []int{7, 6, 4, -1, 1, 2}
+	b := fourSum(a, 16)
 	fmt.Println(b)
 	////
 }

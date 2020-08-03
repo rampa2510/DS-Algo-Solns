@@ -33,6 +33,7 @@ This folder consists of the problems that I have solved outside of coding platfo
 6) [Is Monotonic](Random/Algo/monotonic.go)
 7) [Spiral Traversal](Random/Algo/spiralTraverse.go)
 8) [Longest Peak](Random/Algo/longestPeak.go)
+9) [Four Array Sum](Random/Algo/fourSum.go)
 ### Concepts
 1) [Singly Linked List](Random/linked-list/singlyLinkedList.go)
 2) [Seperate chaining hash table](Random/HashTable/seperateChaining.go)
