@@ -82,8 +82,14 @@ func main() {
 	////
 
 	//// Longest Range
-	a := []int{1, 11, 3, 0, 15, 5, 2, 4, 10, 7, 12, 6}
-	b := longestRange(a)
+	// a := []int{1, 11, 3, 0, 15, 5, 2, 4, 10, 7, 12, 6}
+	// b := longestRange(a)
+	// fmt.Println(b)
+	////
+
+	//// Min rewards
+	a := []int{2, 20, 13, 12, 11, 8, 4, 3, 1, 5, 6, 7, 9, 0}
+	b := minRewards(a)
 	fmt.Println(b)
 	////
 

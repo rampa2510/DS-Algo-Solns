@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 func isPalindrome(k int) bool {
 
 	var rev int = 0
@@ -18,9 +14,4 @@ func isPalindrome(k int) bool {
 		num = num / 10
 	}
 	return rev == k
-}
-
-func main() {
-	a := isPalindrome(10)
-	fmt.Println(a)
 }

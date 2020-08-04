@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func isMonotonic(array []int) bool {
 	flag := 0
 	if len(array) <= 1 {
@@ -17,7 +15,7 @@ func isMonotonic(array []int) bool {
 	}
 
 	for i := 1; i < len(array); i++ {
-		fmt.Println(prevElement, array[i], flag)
+		// fmt.Println(prevElement, array[i], flag)
 		if flag == 1 {
 			if prevElement < array[i] {
 				return false

@@ -42,7 +42,7 @@ func twoSumSort(arr []int, target int) {
 			break
 		}
 		if rPointer <= lPointer {
-			return []int{}
+			// return []int{}
 		}
 		if sum > target {
 			rPointer--
@@ -50,10 +50,4 @@ func twoSumSort(arr []int, target int) {
 			lPointer++
 		}
 	}
-}
-
-func main() {
-	// newMap := twoSum([]int{3, 2, 4}, 6)
-	twoSumSort([]int{3, 2, 4}, 6)
-	// fmt.Println(newMap)
 }

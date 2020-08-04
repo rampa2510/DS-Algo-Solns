@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 	"strconv"
 )
@@ -51,10 +50,4 @@ func reverseWithoutStr(k int) int {
 	}
 
 	return rev
-}
-
-func main() {
-	reverseNum := reverse(123)
-	revNum := reverseWithoutStr(2147483649)
-	fmt.Println(revNum, reverseNum)
 }

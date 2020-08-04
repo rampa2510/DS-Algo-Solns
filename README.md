@@ -21,6 +21,8 @@ This folder consists of the solutions for the leetcode problems. The folder will
 2) [Reverse Integer (7 ques in leetcode)](leetcode/Arrays/Easy/7reverseInteger.go)
 3) [Is palindrome (9 ques in leetcode)](leetcode/Arrays/Easy/9isPalindrome.go)
 4) [Rotate Arr (189 ques in leetcode)](leetcode/Arrays/Easy/189rotateArr.go)
+5) [Shuffle Array (384 ques in leetcode)](leetcode/Arrays/Easy/384shuffleArray.go)
+6) [Monotonic Array (896 ques in leetcode)](leetcode/Arrays/Easy/896Monotonic.go)
 
 ## Random
 This folder consists of the problems that I have solved outside of coding platforms
@@ -36,6 +38,7 @@ This folder consists of the problems that I have solved outside of coding platfo
 9) [Four Array Sum](Random/Algo/fourSum.go)
 10) [Sub array sort](Random/Algo/subArr.go)
 11) [Longest Range](Random/Algo/longestRange.go)
+12) [Min rewards](Random/Algo/minRewards.go)
 ### Concepts
 1) [Singly Linked List](Random/linked-list/singlyLinkedList.go)
 2) [Seperate chaining hash table](Random/HashTable/seperateChaining.go)
