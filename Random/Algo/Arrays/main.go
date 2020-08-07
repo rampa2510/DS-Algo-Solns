@@ -52,33 +52,14 @@ func main() {
 
 	//// FOur sum
 	// a := []int{7, 6, 4, -1, 1, 2}
-	// b := fourSum(a, 16)
+	// b := sum(a, 16)
 	// fmt.Println(b)
 	////
 
 	//// Subarr sort
-	// a := []int{1,
-	// 	2,
-	// 	3,
-	// 	4,
-	// 	5,
-	// 	6,
-	// 	7,
-	// 	8,
-	// 	9,
-	// 	10,
-	// 	11,
-	// 	12,
-	// 	13,
-	// 	14,
-	// 	15,
-	// 	16,
-	// 	17,
-	// 	18,
-	// 	19,
-	// 	2}
-	// b := subArr(a)
-	// fmt.Println(b)
+	a := []int{1, 2, 4, 7, 10, 11, 7, 12, 6, 7, 16, 18, 19}
+	b := subArray(a)
+	fmt.Println(b)
 	////
 
 	//// Longest Range
@@ -88,9 +69,16 @@ func main() {
 	////
 
 	//// Min rewards
-	a := []int{2, 20, 13, 12, 11, 8, 4, 3, 1, 5, 6, 7, 9, 0}
-	b := minRewards(a)
-	fmt.Println(b)
+	// a := []int{2, 20, 13, 12, 11, 8, 4, 3, 1, 5, 6, 7, 9, 0}
+	// b := minRewards(a)
+	// fmt.Println(b)
 	////
+
+	/// Is validate hashmap
+	// a := []int{5, 1, 22, 25, 6, -1, 8, 10}
+	// b := []int{5, 1, 22, 25, 6, -1, 8, 10, 12}
+	// c := isValidate(a, b)
+	// fmt.Println(c)
+	///
 
 }

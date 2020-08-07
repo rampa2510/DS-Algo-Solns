@@ -23,3 +23,6 @@ func longestPeak(array []int) int {
 	// fmt.Println(peaks)
 	return longestPeak
 }
+
+
+

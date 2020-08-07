@@ -25,3 +25,26 @@ func fourSum(array []int, target int) [][]int {
 	return arr
 	// for _,v1 := array
 }
+
+func sum(array []int, target int) [][]int {
+	res := make([][]int, 0)
+	hashMap := make(map[int][][]int)
+	sum := 0
+	for i := 0; i < len(array)-1; i++ {
+		for j := i + 1; j < len(array); j++ {
+			sum = array[i] + array[j]
+			if v, found := hashMap[target-sum]; found {
+				for _, val := range v {
+					newArr := append(val, array[i], 
+						array[j])
+					res = append(res, newArr)
+				}
+			}
+		}
+		for k := 0; k < i; k++ {
+			sum = array[i] + array[k]
+			hashMap[sum] = append(hashMap[sum], []int{array[i], array[k]})
+		}
+	}
+	return res
+}
