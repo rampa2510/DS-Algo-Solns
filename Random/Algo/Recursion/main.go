@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	a := fibRecursion(6)
+	b := SpecialArray{SpecialArray{1, 2}}
+	a := productSum(b)
 	fmt.Println(a)
 }

@@ -40,6 +40,7 @@ This folder consists of the problems that I have solved outside of coding platfo
 11) [Longest Range](Random/Algo/Arrays/longestRange.go)
 12) [Min rewards](Random/Algo/Arrays/minRewards.go)
 13) [Recursion Fibonacci](Random/Algo/Recursion/fib.go)
+14) [Special Array Product sum](Random/Algo/Recursion/productSum.go)
 ### Concepts
 1) [Singly Linked List](Random/linked-list/singlyLinkedList.go)
 2) [Seperate chaining hash table](Random/HashTable/seperateChaining.go)
