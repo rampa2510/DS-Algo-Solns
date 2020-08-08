@@ -57,9 +57,9 @@ func main() {
 	////
 
 	//// Subarr sort
-	a := []int{1, 2, 4, 7, 10, 11, 7, 12, 6, 7, 16, 18, 19}
-	b := subArray(a)
-	fmt.Println(b)
+	// a := []int{1, 2, 4, 7, 10, 11, 7, 12, 6, 7, 16, 18, 19}
+	// b := subArray(a)
+	// fmt.Println(b)
 	////
 
 	//// Longest Range
@@ -80,5 +80,15 @@ func main() {
 	// c := isValidate(a, b)
 	// fmt.Println(c)
 	///
+
+	////zigzag
+	a := [][]int{
+		{1, 3, 4, 10},
+		{2, 5, 9, 11},
+		{6, 8, 12, 15},
+		{7, 13, 14, 16},
+	}
+	b := zig(a)
+	fmt.Println(b)
 
 }
